@@ -55,7 +55,7 @@ const Login = () => {
                       type="password"
                       placeholder="Password"
                     />
-                  </div>
+                  </div>  
                 </div>
                 <div>
                   <button
