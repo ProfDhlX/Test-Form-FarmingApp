@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -76,13 +77,13 @@ function Signup() {
             </h2>
             <p className="mt-2 text-base text-green-400">
               Already have an account?{" "}
-              <a
-                href="#"
+              <Link
+              to={"login"}
                 title=""
                 className="font-medium text-black transition-all duration-300 hover:underline "
               >
                 Sign In
-              </a>
+              </Link>
             </p>
             <form onSubmit={handleSubmit} className="mt-8">
               <div className="space-y-5">
